@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>efeuno - Un lugar para puro fan</title>
-  <meta content="" name="efeuno - Un lugar para puro fan">
-  <meta content="" name="EFEUNO">
+  <title>efeuno | Proyecto web universitario sobre Fórmula 1</title>
+  <meta name="description" content="Primer proyecto web de Alan Berra: una experiencia responsiva sobre Fórmula 1 creada con HTML, CSS, JavaScript y Bootstrap.">
+  <meta name="author" content="Alan Berra García">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="efeuno | Proyecto web universitario">
+  <meta property="og:description" content="Una muestra académica sobre Fórmula 1 y el primer proyecto web de Alan Berra.">
+  <meta property="og:type" content="website">
   <link href="assets/images/favicon.png" rel="icon">
   <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -26,6 +30,8 @@
 
 <body>
 
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -35,23 +41,23 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">INICIO</a></li>
-          <li><a href="#about">NOSOTROS</a></li>
+          <li><a href="#about">PROYECTO</a></li>
           <li><a href="#testimonials">DATOS</a></li>
           <li><a href="#team">CORREDORES</a></li>
           <li><a href="#faq">FAQs</a></li>
           <li class="dropdown"><a href="#"><span>MENU </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="https://www.formula1.com/">FORMULA 1</a></li>
-              <li><a href="https://www.formula1.com/en/latest/article.formula-1-announces-calendar-for-2024.XL3c5Cxi0ZOQzPrUu5izL.html">Calendario 2024</a></li>
-              <li><a href="https://www.formula1.com/en/results.html/2023/races.html">Resultados 2023</a></li>
-              <li><a href="https://www.formula1.com/en/drivers.html">Drivers 2023</a></li>
-              <li><a href="#register">Registro</a></li>
-              <li><a href="aboutme.html">Acerca de Mi</a></li>
+              <li><a href="https://www.formula1.com/en/racing.html">Calendario oficial</a></li>
+              <li><a href="https://www.formula1.com/en/results.html">Resultados oficiales</a></li>
+              <li><a href="https://www.formula1.com/en/drivers.html">Pilotos</a></li>
+              <li><a href="#project-context">Contexto</a></li>
+              <li><a href="aboutme.html">Acerca de mí</a></li>
 
             </ul>
           </li>
           <li><a href="#product-sale">PRODUCTOS</a></li>
-          <li><a href="#recent-posts">NOTICIAS</a></li>
+          <li><a href="#recent-posts">ARCHIVO 2023</a></li>
         </ul>
       </nav>
 
@@ -91,14 +97,12 @@
           <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-chevron-double-down"></i></div>
-              <h2 class="title"><a href="https://open.spotify.com/show/7nC1psX8DhMSam5ohIxo3E?si=7d0f1736ab844723" class="stretched-link">CLICK AQUI</a></h2>
-              <h4 class="title"><a href="https://www.fia.com/es/la-fia" class="stretched-link">Pagina Oficial FIA</a></h4>
+              <h2 class="title"><a href="https://www.fia.com/es/la-fia" class="stretched-link">FIA</a></h2>
+              <h4 class="title">Página oficial de la FIA</h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
     </div>
   </section>
 
@@ -106,8 +110,8 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Acerca de efeuno - Tu Destino de Fórmula 1</h2>
-          <p>Explorando el Mundo de la Fórmula 1</p>
+          <h2>Acerca de efeuno</h2>
+          <p>Mi primer proyecto web, creado como parte de mi formación universitaria.</p>
         </div>
         <div class="row gy-4">
           <div class="col-lg-4">
@@ -116,16 +120,13 @@
           <div class="col-lg-8">
             <div class="content ps-0 ps-lg-5">
               <p>
-                Bienvenido a efeuno, tu destino definitivo para todo lo relacionado con la Fórmula 1. Nos apasiona explorar el emocionante mundo de la F1, desde la acción de alta velocidad en las pistas hasta las últimas noticias, actualizaciones y conocimientos desde el paddock.
+                efeuno es una muestra académica construida en 2023 para practicar estructura semántica, diseño responsivo e interacción en el navegador. El contenido conserva el contexto de aquella temporada como parte de la historia del proyecto.
               </p>
               <ul>
-                <li><i class="bi bi-1-square"></i> Descubre la emoción de las carreras y campeonatos de F1.</li>
-                <li><i class="bi bi-2-square"></i> Obtén información sobre las estrategias y tecnologías que impulsan los autos de F1.</li>
-                <li><i class="bi bi-3-square"></i> Mantente actualizado con las últimas noticias y desarrollos en el universo de la F1.</li>
-                <li><i class="bi bi-4-square"></i> Acompáñanos mientras exploramos la historia y leyendas de la Fórmula 1.</li>
-                <li><i class="bi bi-5-square"></i> Experimenta la emoción y la adrenalina del deporte motor más rápido del mundo.</li>
-                <li><i class="bi bi-6-square"></i> Explora entrevistas exclusivas y historias detrás de escena del mundo de la F1.</li>
-                <li><i class="bi bi-7-square"></i> Conéctate con otros entusiastas y comparte tu amor por la F1.</li>
+                <li><i class="bi bi-check-circle"></i> Maquetación con HTML5, CSS3 y Bootstrap.</li>
+                <li><i class="bi bi-check-circle"></i> Componentes interactivos con JavaScript, Swiper y AOS.</li>
+                <li><i class="bi bi-check-circle"></i> Adaptación para pantallas de escritorio y dispositivos móviles.</li>
+                <li><i class="bi bi-check-circle"></i> Navegación por secciones, tarjetas, acordeones y carruseles.</li>
               </ul>
             </div>
           </div>
@@ -137,14 +138,14 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/images/clients/client-8.jpeg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-3.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-5.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-6.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-7.png" class="img-fluid" alt="Escudería de Fórmula 1"></div>
+            <div class="swiper-slide"><img src="assets/images/clients/client-8.jpeg" class="img-fluid" alt="Escudería de Fórmula 1"></div>
           </div>
         </div>
 
@@ -152,18 +153,17 @@
     </section>
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
-        <h3>¿Quieres seguir aprendiendo mas?</h3>
-        <a class="cta-btn" href="mailto:alanberragarcia@gmail.com">Contactame</a>
+        <h3>¿Quieres conocer el trabajo detrás del proyecto?</h3>
+        <a class="cta-btn" href="aboutme.html">Conoce al autor</a>
       </div>
     </section>
 
-    
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Datasos</h2>
-          <p>Aqui encontraras datos interesantes</p>
+          <h2>Datos destacados</h2>
+          <p>Una selección de curiosidades sobre tecnología, velocidad y competición.</p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -235,13 +235,12 @@
       </div>
     </section>
 
-    
     <section id="team" class="team sections-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>Corredores</h2>
-          <p>Para que conozcas a los corredores mas iconicos del momento</p>
+          <p>Pilotos destacados en la temporada que inspiró este proyecto.</p>
         </div>
 
         <div class="row gy-4">
@@ -253,9 +252,9 @@
                 <a href="https://www.facebook.com/sergioperezf1/"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/schecoperez/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="assets/images/team/sergio-perez.jpg" class="img-fluid" alt="">
-              <h4>Sergio Perez</h4>
-              <span>RB Racing Driver</span>
+              <img src="assets/images/team/sergio-perez.jpg" class="img-fluid" alt="Sergio Pérez">
+              <h4>Sergio Pérez</h4>
+              <span>Piloto de Red Bull Racing en 2023</span>
             </div>
           </div>
 
@@ -266,9 +265,9 @@
                 <a href="https://www.facebook.com/MaxVerstappen"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/maxverstappen1/"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="assets/images/team/max-verstappen.jpg" class="img-fluid" alt="">
+              <img src="assets/images/team/max-verstappen.jpg" class="img-fluid" alt="Max Verstappen">
               <h4>Max Verstappen</h4>
-              <span>RB Racing Driver</span>
+              <span>Piloto de Red Bull Racing en 2023</span>
             </div>
           </div>
 
@@ -279,9 +278,9 @@
                 <a href="https://www.facebook.com/LewisHamilton"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/lewishamilton/"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="assets/images/team/lewis-hamilton.jpg" class="img-fluid" alt="">
+              <img src="assets/images/team/lewis-hamilton.jpg" class="img-fluid" alt="Lewis Hamilton">
               <h4>Lewis Hamilton</h4>
-              <span>AMG Petronas Driver</span>
+              <span>Piloto de Mercedes-AMG Petronas en 2023</span>
             </div>
           </div>
 
@@ -292,9 +291,9 @@
                 <a href="https://www.facebook.com/CharlesLeclercOfficiel"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/charles_leclerc/"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="assets/images/team/charles-leclerc.jpg" class="img-fluid" alt="">
+              <img src="assets/images/team/charles-leclerc.jpg" class="img-fluid" alt="Charles Leclerc">
               <h4>Charles Leclerc</h4>
-              <span>Scuderia Ferrari Driver</span>
+              <span>Piloto de Scuderia Ferrari en 2023</span>
             </div>
           </div>
 
@@ -304,7 +303,7 @@
     </section>
 
 
-    
+
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
 
@@ -383,12 +382,12 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
                     <span class="num"><i class="bi bi-5-square"></i></span>
-                    ¿Que equipos compiten a lo largo de la temporada?
+                    ¿Qué equipos compitieron en la temporada 2023?
                   </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Algunos de los equipos destacados son Mercedes-AMG Petronas Formula One Team, Red Bull Racing, Scuderia Ferrari, McLaren F1 Team, Alpine F1 Team, Aston Martin Cognizant Formula One Team, Alfa Romeo Racing Orlen, Williams Racing, Haas F1 Team y Uralkali Haas F1 Team. Cada equipo cuenta con su propia historia, pilotos y estrategias para competir en los circuitos de todo el mundo, buscando alcanzar el éxito en cada carrera.
+                    En 2023 compitieron Red Bull Racing, Mercedes, Ferrari, McLaren, Aston Martin, Alpine, Williams, AlphaTauri, Alfa Romeo y Haas. Cada escudería sumó puntos para el campeonato de constructores.
                   </div>
                 </div>
               </div>
@@ -401,13 +400,12 @@
       </div>
     </section>
 
-    
     <section id="product-sale" class="recent-posts sections-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Algunos Productos</h2>
-          <p>Para presumir tus fachas</p>
+          <h2>Productos de referencia</h2>
+          <p>Muestra académica de tarjetas de comercio electrónico con artículos y precios de 2023.</p>
         </div>
 
         <div class="row gy-4">
@@ -416,10 +414,10 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/rb-hoddie.webp" alt="" class="img-fluid">
+                <img src="assets/images/shop/rb-hoddie.webp" alt="Sudadera de Red Bull Racing" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/red-bull-racing/oracle-red-bull-racing-2023-team-hoodie/t-21311916+p-78815836486702+z-9-1257377968?_ref=p-GALP:m-GRID:i-r0c0:po-0">Sudadera con capucha del equipo Oracle Red Bull Racing 2023</a>
@@ -427,12 +425,12 @@
 
               <div class="d-flex align-items-center">
                 <div class="post-meta">
-                  <p class="post-author">Red Bull Racing</p></a>
+                  <p class="post-author">Red Bull Racing</p>
                   <p class="post-date">
                     Regular: <b>US$115.00</b>
-                  </p> 
+                  </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/red-bull-racing/oracle-red-bull-racing-2023-team-hoodie/t-21311916+p-78815836486702+z-9-1257377968?_ref=p-GALP:m-GRID:i-r0c0:po-0"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/red-bull-racing/oracle-red-bull-racing-2023-team-hoodie/t-21311916+p-78815836486702+z-9-1257377968?_ref=p-GALP:m-GRID:i-r0c0:po-0">VER EN TIENDA</a>
                 </div>
               </div>
 
@@ -443,10 +441,10 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/amg-shirt.webp" alt="" class="img-fluid">
+                <img src="assets/images/shop/amg-shirt.webp" alt="Camiseta de Mercedes-AMG Petronas" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black/t-32754257+p-56145862861507+z-9-2179071383?_ref=p-GALP:m-GRID:i-r0c2:po-2">Camiseta Piloto Equipo Mercedes AMG Petronas F1 2023 - Negro</a>
@@ -459,7 +457,7 @@
                     Regular: <b>US$82.00</b>
                   </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black/t-32754257+p-56145862861507+z-9-2179071383?_ref=p-GALP:m-GRID:i-r0c2:po-2"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black/t-32754257+p-56145862861507+z-9-2179071383?_ref=p-GALP:m-GRID:i-r0c2:po-2">VER EN TIENDA</a>
                 </div>
               </div>
 
@@ -470,10 +468,10 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/mclaren-hoddie.webp" alt="" class="img-fluid">
+                <img src="assets/images/shop/mclaren-hoddie.webp" alt="Sudadera de McLaren" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/mclaren-f1-team/mclaren-2023-team-hooded-sweat-unisex/t-76649728+p-565881691789+z-7-3536430053?_ref=p-GALP:m-GRID:i-r1c2:po-5">Sudadera con capucha del equipo McLaren 2023 - Unisex</a>
@@ -486,21 +484,21 @@
                     Regular: <b>US$115.00</b>
                   </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/mclaren-f1-team/mclaren-2023-team-hooded-sweat-unisex/t-76649728+p-565881691789+z-7-3536430053?_ref=p-GALP:m-GRID:i-r1c2:po-5"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/mclaren-f1-team/mclaren-2023-team-hooded-sweat-unisex/t-76649728+p-565881691789+z-7-3536430053?_ref=p-GALP:m-GRID:i-r1c2:po-5">VER EN TIENDA</a>
                 </div>
               </div>
 
             </article>
           </div>
-          
+
           <div class="col-xl-4 col-md-6">
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/ferrari-ftbshirt.jpg" alt="" class="img-fluid">
+                <img src="assets/images/shop/ferrari-ftbshirt.jpg" alt="Camiseta de Scuderia Ferrari" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/scuderia-ferrari/scuderia-ferrari-2023-team-charles-leclerc-football-shirt/t-76861981+p-1247471775123+z-8-2629624595?_ref=p-GALP:m-GRID:i-r2c1:po-7">Scuderia Ferrari 2023 Equipo Charles Leclerc Camiseta de fútbol</a>
@@ -513,7 +511,7 @@
                     Regular: <b>US$82.00</b>
                   </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/scuderia-ferrari/scuderia-ferrari-2023-team-charles-leclerc-football-shirt/t-76861981+p-1247471775123+z-8-2629624595?_ref=p-GALP:m-GRID:i-r2c1:po-7"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/scuderia-ferrari/scuderia-ferrari-2023-team-charles-leclerc-football-shirt/t-76861981+p-1247471775123+z-8-2629624595?_ref=p-GALP:m-GRID:i-r2c1:po-7">VER EN TIENDA</a>
                 </div>
               </div>
 
@@ -524,10 +522,10 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/astonmartin-alonsoshirt.webp" alt="" class="img-fluid">
+                <img src="assets/images/shop/astonmartin-alonsoshirt.webp" alt="Camiseta de Aston Martin" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/aston-martin/aston-martin-aramco-cognizant-f1-2023-official-fernando-alonso-team-driver-t-shirt/t-10219681+p-23032528392489+z-9-1822779449?_ref=p-GALP:m-GRID:i-r6c1:po-19">Aston Martin Aramco Cognizant F1 2023 Camiseta oficial del piloto del equipo Fernando Alonso</a>
@@ -540,7 +538,7 @@
                     Regular: <b>US$87.00</b>
                   </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/aston-martin/aston-martin-aramco-cognizant-f1-2023-official-fernando-alonso-team-driver-t-shirt/t-10219681+p-23032528392489+z-9-1822779449?_ref=p-GALP:m-GRID:i-r6c1:po-19"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/aston-martin/aston-martin-aramco-cognizant-f1-2023-official-fernando-alonso-team-driver-t-shirt/t-10219681+p-23032528392489+z-9-1822779449?_ref=p-GALP:m-GRID:i-r6c1:po-19">VER EN TIENDA</a>
                 </div>
               </div>
 
@@ -551,10 +549,10 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/shop/alphatauri-hoddie.webp" alt="" class="img-fluid">
+                <img src="assets/images/shop/alphatauri-hoddie.webp" alt="Sudadera de AlphaTauri" class="img-fluid">
               </div>
 
-              <p class="post-category">Weareables</p>
+              <p class="post-category">Ropa y accesorios</p>
 
               <h2 class="title">
                 <a href="https://f1store4.formula1.com/es/alphatauri/scuderia-alphatauri-2023-team-sweat-hoodie/t-10976544+p-01037037768580+z-9-4264982730?_ref=p-GALP:m-GRID:i-r12c1:po-37">Sudadera con capucha del equipo Scuderia ALPHA TAURI 2023</a>
@@ -567,7 +565,7 @@
                     Regular: <b>US$122.00</b>
                   </p>
                   <br>
-                  <a href="https://f1store4.formula1.com/es/alphatauri/scuderia-alphatauri-2023-team-sweat-hoodie/t-10976544+p-01037037768580+z-9-4264982730?_ref=p-GALP:m-GRID:i-r12c1:po-37"><button type="button" class="btn btn-secondary btn-lg">COMPRAR</button></a>
+                  <a class="btn btn-secondary btn-lg" href="https://f1store4.formula1.com/es/alphatauri/scuderia-alphatauri-2023-team-sweat-hoodie/t-10976544+p-01037037768580+z-9-4264982730?_ref=p-GALP:m-GRID:i-r12c1:po-37">VER EN TIENDA</a>
                 </div>
               </div>
 
@@ -583,8 +581,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Noticias Recientes</h2>
-          <p>Para que te mantengas actualizado</p>
+          <h2>Archivo de noticias</h2>
+          <p>Contenido utilizado durante la construcción del proyecto en diciembre de 2023.</p>
         </div>
 
         <div class="row gy-4">
@@ -593,7 +591,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/blog/blog-1.webp" alt="" class="img-fluid">
+                <img src="assets/images/blog/blog-1.webp" alt="Monoplaza de Fórmula 1 presentado por Sauber" class="img-fluid">
               </div>
 
               <p class="post-category">Noticias</p>
@@ -618,7 +616,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/blog/blog-2.jpeg" alt="" class="img-fluid">
+                <img src="assets/images/blog/blog-2.jpeg" alt="Pilotos de Fórmula 1 en la parrilla" class="img-fluid">
               </div>
 
               <p class="post-category">Actualidad</p>
@@ -643,7 +641,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/images/blog/blog-3.png" alt="" class="img-fluid">
+                <img src="assets/images/blog/blog-3.png" alt="Sergio Pérez durante la temporada 2023" class="img-fluid">
               </div>
 
               <p class="post-category">Noticias</p>
@@ -668,42 +666,27 @@
 
       </div>
     </section>
-    <section id="register" class="recent-posts sections-bg">
+    <section id="project-context" class="project-context">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Registrate</h2>
-          <p>Para que te mantengamos actualizado</p>
+          <h2>Contexto del proyecto</h2>
+          <p>Esta página no es un medio oficial, una tienda ni un servicio de registro.</p>
         </div>
 
         <div class="row gy-4">
           <div class="col-12">
-            <article>
-              <form action="/tu-accion-aqui" method="POST">
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre:</label>
-                  <input type="text" class="form-control" id="nombre" name="nombre" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje:</label>
-                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="promociones" name="promociones">
-                  <label class="form-check-label" for="promociones">Acepto recibir promociones y noticias</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Registrarse</button>
-              </form>
+            <article class="project-note">
+              <i class="bi bi-mortarboard" aria-hidden="true"></i>
+              <div>
+                <h3>Una fotografía de mi aprendizaje</h3>
+                <p>efeuno fue mi primera página web. La mantengo pública para mostrar el punto de partida de mi trayectoria y la evolución hacia proyectos de QA y desarrollo de software más completos.</p>
+                <a class="btn btn-primary" href="https://github.com/Balhoo">Ver mi trabajo actual en GitHub</a>
+              </div>
             </article>
           </div>
         </div>
-        
-        
-        
+
 
       </div>
     </section>
@@ -716,9 +699,8 @@
       <div class="row gy-4">
         <div class="col-lg-12 col-md-12 footer-info text-center">
           <div class="social-links d-flex mt-4 justify-content-center">
-            <a href="https://twitter.com/AlanBerra" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.facebook.com/alanberrag/" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/a_berra_g/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/Balhoo" aria-label="GitHub de Alan Berra"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/alanberragarcia" aria-label="LinkedIn de Alan Berra"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -727,26 +709,24 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Berra</span></strong>. All Rights Reserved
+        &copy; <span id="current-year">2026</span> <strong><span>Alan Berra</span></strong>
       </div>
       <div class="credits">
-        Designed by <a href="#">Alan Berra</a>
+        Proyecto universitario · HTML, CSS, JavaScript y Bootstrap
       </div>
     </div>
 
   </footer>
-  
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <a href="#hero" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Volver al inicio"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
-  
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  
   <script src="assets/javascripts/main.js"></script>
 
 </body>

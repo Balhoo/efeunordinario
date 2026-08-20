@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  const year = document.querySelector('#current-year');
+  if (year) year.textContent = new Date().getFullYear();
+
   /**
    * Preloader
    */
@@ -219,8 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
-
   /**
    * Animation on scroll function and init
    */
@@ -231,9 +232,19 @@ document.addEventListener('DOMContentLoaded', () => {
       once: true,
       mirror: false
     });
+
+    // Recalculate positions after fonts, images or a deep link move the viewport.
+    window.requestAnimationFrame(() => {
+      AOS.refreshHard();
+      window.dispatchEvent(new Event('scroll'));
+    });
   }
   window.addEventListener('load', () => {
     aos_init();
+  });
+  window.addEventListener('hashchange', () => {
+    AOS.refreshHard();
+    window.dispatchEvent(new Event('scroll'));
   });
 
 });
