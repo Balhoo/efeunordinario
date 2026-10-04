@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const year = document.querySelector('#current-year');
   if (year) year.textContent = new Date().getFullYear();
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /**
    * Preloader
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function navbarlinksActive() {
     navbarlinks.forEach(navbarlink => {
 
-      if (!navbarlink.hash) return;
+      if (!navbarlink.hash || navbarlink.hash === '#') return;
 
       let section = document.querySelector(navbarlink.hash);
       if (!section) return;
@@ -74,17 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+    const opened = document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavShow.classList.toggle('d-none');
     mobileNavHide.classList.toggle('d-none');
+    mobileNavShow.setAttribute('aria-expanded', String(opened));
+    mobileNavHide.setAttribute('aria-expanded', String(opened));
+    if (opened) document.querySelector('#navbar a')?.focus();
+    else mobileNavShow.focus();
   }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && document.body.classList.contains('mobile-nav-active')) mobileNavToogle();
+  });
 
   /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navbar a').forEach(navbarlink => {
 
-    if (!navbarlink.hash) return;
+    if (!navbarlink.hash || navbarlink.hash === '#') return;
 
     let section = document.querySelector(navbarlink.hash);
     if (!section) return;
@@ -126,10 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', togglescrollTop);
     document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    scrollTop.addEventListener('click', event => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+      document.querySelector('#header .logo')?.focus({ preventScroll: true });
+    });
   }
 
   /**
@@ -138,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
-    autoplay: {
+    autoplay: reducedMotion ? false : {
       delay: 5000,
       disableOnInteraction: false
     },
@@ -174,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.slides-1', {
     speed: 600,
     loop: true,
-    autoplay: {
+    autoplay: reducedMotion ? false : {
       delay: 5000,
       disableOnInteraction: false
     },
@@ -196,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.slides-3', {
     speed: 600,
     loop: true,
-    autoplay: {
+    autoplay: reducedMotion ? false : {
       delay: 5000,
       disableOnInteraction: false
     },
@@ -227,6 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   function aos_init() {
     AOS.init({
+      disable: reducedMotion,
       duration: 1000,
       easing: 'ease-in-out',
       once: true,

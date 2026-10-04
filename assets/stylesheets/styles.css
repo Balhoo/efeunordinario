@@ -2100,3 +2100,23 @@ section {
     padding: 24px;
   }
 }
+/* RaceLab is a separate laboratory; this introduction keeps efeuno's coral identity. */
+.racelab-feature{background:#fff7f4;scroll-margin-top:90px}
+.racelab-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:center}
+.racelab-kicker{color:#9d301d;font-size:12px;letter-spacing:2px;font-weight:700}
+.racelab-feature h2{font-size:clamp(32px,4vw,52px);font-weight:700;line-height:1.1;margin:18px 0 24px}
+.racelab-feature p{line-height:1.8}
+.racelab-launch{display:inline-flex;align-items:center;gap:24px;background:#a93421;color:white;padding:15px 22px;border-radius:8px;font-weight:600;min-height:48px;margin:15px 15px 15px 0}
+.racelab-launch:hover{background:#872818;color:white}
+.racelab-portfolio{display:inline-block;color:#9d301d;text-decoration:underline;text-underline-offset:4px}
+.racelab-preview{border:1px solid #ebc9c1;border-radius:18px;background:white;padding:32px}
+.racelab-preview-title{font-family:Consolas,monospace;font-size:13px;letter-spacing:1px;color:#9d301d}
+.racelab-preview ol{list-style:none;margin:24px 0;padding:0}
+.racelab-preview li{display:flex;gap:16px;border-bottom:1px solid #ebdcd7;padding:17px 0}
+.racelab-preview li strong{font-family:Consolas,monospace;color:#9d301d}
+.racelab-disclaimer{font-size:12px;color:#5c4b47;margin-bottom:0}
+button.mobile-nav-toggle{border:0;background:transparent;padding:6px;min-width:44px;min-height:44px}
+.navbar .dropdown:focus-within>ul{opacity:1;visibility:visible;top:100%}
+:focus-visible{outline:3px solid #9d301d;outline-offset:4px}
+@media(max-width:767px){.racelab-grid{grid-template-columns:minmax(0,1fr);gap:25px}.racelab-preview{padding:22px}}
+@media(prefers-reduced-motion:reduce){html,:root{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}[data-aos]{opacity:1!important;transform:none!important}}

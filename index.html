@@ -42,6 +42,7 @@
         <ul>
           <li><a href="#hero">INICIO</a></li>
           <li><a href="#about">PROYECTO</a></li>
+          <li><a href="#racelab">RACELAB</a></li>
           <li><a href="#testimonials">DATOS</a></li>
           <li><a href="#team">CORREDORES</a></li>
           <li><a href="#faq">FAQs</a></li>
@@ -61,8 +62,8 @@
         </ul>
       </nav>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <button type="button" class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Abrir menú" aria-controls="navbar" aria-expanded="false"></button>
+      <button type="button" class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Cerrar menú" aria-controls="navbar" aria-expanded="false"></button>
 
     </div>
   </header>
@@ -107,6 +108,24 @@
   </section>
 
   <main id="main">
+    <section id="racelab" class="racelab-feature" aria-labelledby="racelab-title">
+      <div class="container">
+        <div class="racelab-grid">
+          <div>
+            <p class="racelab-kicker">NUEVO / LABORATORIO INTERACTIVO</p>
+            <h2 id="racelab-title">Del aficionado<br>al muro de boxes.</h2>
+            <p>efeuno comenzó como mi primera web. Ahora también puedes explorar estrategias con RaceLab, un simulador original que compara ritmo, desgaste y paradas vuelta por vuelta.</p>
+            <a class="racelab-launch" href="racelab/">Abrir simulador RaceLab <span aria-hidden="true">→</span></a>
+            <a class="racelab-portfolio" href="https://balhoo.github.io/Portfolio-Demo/">Ver mi portafolio actual</a>
+          </div>
+          <div class="racelab-preview" aria-label="Funciones del laboratorio">
+            <p class="racelab-preview-title">RACELAB / STRATEGY ENGINE</p>
+            <ol><li><strong>01</strong> Configura circuito, temperatura y vueltas.</li><li><strong>02</strong> Compara dos planes de neumáticos y paradas.</li><li><strong>03</strong> Consulta gráfica, tabla e historial de cada vuelta.</li></ol>
+            <p class="racelab-disclaimer">Modelo y circuitos ficticios. No usa telemetría real ni predice resultados de Formula 1. Sin cuentas, pagos ni servicios externos para ejecutar la simulación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -709,7 +728,7 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; <span id="current-year">2026</span> <strong><span>Alan Berra</span></strong>
+        &copy; <span id="current-year">2026</span> <strong><span>Alan Berra Garcia</span></strong>. Todos los derechos reservados sobre el trabajo original.
       </div>
       <div class="credits">
         Proyecto universitario · HTML, CSS, JavaScript y Bootstrap
