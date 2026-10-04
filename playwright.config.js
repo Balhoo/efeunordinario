@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/e2e',retries:process.env.CI?1:0,use:{baseURL:'http://127.0.0.1:3007',trace:'off'},projects:[{name:'desktop',use:{viewport:{width:1280,height:800}}},{name:'mobile',use:{viewport:{width:390,height:844}}}],webServer:{command:'node server.mjs',url:'http://127.0.0.1:3007',reuseExistingServer:!process.env.CI}});
